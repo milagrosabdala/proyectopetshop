@@ -1,65 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PET_SHOP</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+
+
 </head>
 
 <body>
     <header>
-        <div>
+
+
+        <div class="topheader">
             <span>Grandes ofertas en comederos</span>
-            <span>Español ARG$</span>
+            <span>Español </span>
+            <span style="float: right;"> ARG $</span>
         </div>
+
         <div>
-            <h1><span><img src="img/Cat.png"></span>FrontCat&Dog <span><img src="img/Dog.png"></span>
-            </h1>
-            <nav>
-                <ul type=none>
-                <span><img src="img/pawprint 2.png">Categorias</span>
-                <span><img src="img/pawprint 2.png">Pets</span>
-                <span><img src="img/pawprint 2.png">Nosotros</span>
-                <span><img src="img/pawprint 2.png">Contactanos</span>
-            </ul>
-            </nav>
+            <div class=divlogo>
+                <h1>
+                    <img src="img/Cat.png">Front <span class="perroygato">Cat&Dog </span><img src="img/Dog.png">
+                </h1>
+
+                <nav class="linksnavegacion">
+                    <ul type=none>
+                        <li><a href="#"><i class="fas fa-paw"></i> Categorías</a></li>
+                        <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
+                        <li><a href="#"><i class="fas fa-paw"></i> Nosotros</a></li>
+                        <li><a href="#"><i class="fas fa-paw"></i> Contactanos</a></li>
+
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-
-
     </header>
+
+
+    <div class=hero>
+        <p class=esunplacer>¡Es un placer tenerte aqui!</p>
+        <p class="comederosendescuento">¡Comederos en descuento!</p>
+        <p class=linkcomederos><a href="comederos">COMEDEROS</a></p>
+    </div>
+
+
+
     <content>
-        <img src="img/bowl-and-pet-daities-on-green-background 1.png">
-        <p>¡Es un placer tenerte aqui!</p>
-        <p>¡Comederos en descuento!</p>
-        <p><a href="comederos">COMEDEROS</a></p>
-    </content>
-    <content>
-        <div><img src="img/pawprint 1.png"</div>
-        <h2 align="center">Productos Destacados</h2>
-        <span>Comederos</span> <span>Accesorios</span> <span>Comida</span>
+        <div align=center><img src="img/pawprint 1.png" </div>
+            <h2 align="center">Productos Destacados</h2>
+            <span>Comederos</span> <span>Accesorios</span> <span>Comida</span>
 
     </content>
-    <content>
+
+    <div class="cards">
         <div>
             <img src="img/churrasquito.png" alt="churrasquito">
             <p><b>Juguete Churrasquito</b></p>
-            <p>$150</p>
+            <p class="precio">$150</p>
         </div>
+
         <div>
             <img src="img/comedero.png" alt="comedero">
             <p><b>Comedero para perro</b></p>
-            <p>$250</p>
+            <p class="precio">$250</p>
         </div>
+
+
         <div>
             <img src="img/Huesito.png" alt="Huesito">
             <p><b>Juguete Huesito</b></p>
-            <p>$650</p>
+            <p class="precio">$650</p>
         </div>
-    </content>
-    <footer><p align=center>Todos los derechos reservados Front End</p></footer>
+
+    </div>
+
+
+
+    <footer>
+
+        <div class="footerbottom">
+            <span class="logofooter"><img src="img/Cat.png">Front <span class="perroygato">Cat&Dog </span>
+                <img src="img/Dog.png"></span>
+            <dl align=left>
+                <dt><img src="/img/iconolocation.png" alt="locationimage">Localidad
+                <dd>Calle - provincia</dd>
+                </dt>
+                <dt><img src="/img/iconotelefono.png" alt="phoneimage">Teléfono
+                <dd>Número de teléfono</dd>
+                </dt>
+                <dt><img src="/img/email.png" alt="emailimage">Correo Electrónico
+                <dd>Dirección de correo</dd>
+                </dt>
+            </dl>
+
+
+        </div>
+
+        <p class="derechosreservados" align=center>Todos los derechos reservados Front End</p>
+    </footer>
 </body>
 
 </html>

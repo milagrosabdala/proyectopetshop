@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap')
+
+
+
+
+/*HEADER*/
+
+
+
+
+h1 {color:black}
+.topheader{color: whitesmoke; background-color: black; background-size: contain;}
+.divlogo {background-color: orange;}
+
+.hero {
+  background-color: aliceblue;
+  background-image: url(/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.perroygato {color: white;}
+
+
+.esunplacer {
+  color: black ;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  background-color: white; position: absolute;
+  width: 345px;
+  height: 35px;
+  left: 658px;
+  top: 246px; 
+  border-radius:  5%;}
+
+.comederosendescuento { position: absolute;
+  width: 190px;
+  height: 19px;
+  left: 740px;
+  top: 303px;
+  
+}
+
+.linkcomederos { background-color: orange;
+  margin: auto;
+  position: absolute;
+  border-radius: 5%;
+  width: 141px;
+  height: 49px;
+  left: 767px;
+  top: 334px;
+  }
+a:link{color: white;}
+a:visited {color: white;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+
+
+
+/*BODY*/
+h2{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 40px;}
+
+
+
+
+/*FOOTER*/
+.footerbottom {color: white;
+   background-color:#3C2313; opacity: 100%; background-position: center; background-size: cover; }
+
+
+.derechosreservados{text-align: center;color: white; background-color: black;}
+.precio{color: orange; font-size: 10px;font-family: 'Roboto', sans-serif;}
+
+.cards {display: flex; flex-direction: row; justify-content: space-around}
+
