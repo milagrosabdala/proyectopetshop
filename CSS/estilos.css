@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap')
 
+
+
+
 /*HEADER*/
 
 
@@ -11,7 +14,7 @@ h1 {color:black}
 
 .hero {
   background-color: aliceblue;
-  background-image: url(/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-image: url(/img/fondoheroe.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
