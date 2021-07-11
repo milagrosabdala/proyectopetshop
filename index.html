@@ -8,29 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PET_SHOP</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-    <link rel="stylesheet" href="CSS/estilos.css" >
+    <link rel="stylesheet" href="CSS/estilos.css">
 
 
 </head>
 
 <body>
+
+
+    <!---HEADER-->
+
     <header>
 
 
-        <div class="topheader">
-            <span>Grandes ofertas en comederos</span>
-            <span>Español </span>
-            <span style="float: right;"> ARG $</span>
+        <div class="topheader d-flex justify-between align-items-center">
+            <div>Grandes ofertas en comederos</div>
+            <ul class="desplegabletopheader d-flex" type=none>
+                <li> <a href="#">Español</a> </li>
+                <li> <a href="#">ARG $</a> </li>
+            </ul>
+
         </div>
 
         <div>
-            <div class=divlogo>
+            <div class="divlogo d-flex align-items-center justify-between ">
                 <h1>
                     <img src="img/Cat.png">Front <span class="perroygato">Cat&Dog </span><img src="img/Dog.png">
                 </h1>
 
                 <nav class="linksnavegacion">
-                    <ul type=none>
+                    <ul class="barranavegacion align-items-center d-flex" type=none>
                         <li><a href="#"><i class="fas fa-paw"></i> Categorías</a></li>
                         <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
                         <li><a href="#"><i class="fas fa-paw"></i> Nosotros</a></li>
@@ -42,23 +49,37 @@
         </div>
     </header>
 
+    <!---HEROE-->
 
-    <div class=hero>
-        <p class=esunplacer>¡Es un placer tenerte aqui!</p>
-        <p class="comederosendescuento">¡Comederos en descuento!</p>
-        <p class=linkcomederos><a href="comederos">COMEDEROS</a></p>
+    <div class="d-flex hero">
+        <div class="contenedorhero">
+            <p class="esunplacer text-center">¡Es un placer tenerte aqui!</p>
+            <p class="comederosendescuento text-center">¡Comederos en descuento!</p>
+            <p class="linkcomederos text-center"><a href="comederos">COMEDEROS</a></p>
+        </div>
+
+    </div>
+
+    <!--BANNER CENTRAL-->
+
+
+
+    <div class="bannercentral">
+        <img src="img/pawprint 1.png" </div>
+        <h2>Productos Destacados</h2>
+        <div class="seleccion">
+            <p>Comederos</p>
+            <p>Accesorios</p>
+            <p>Comida</p>
+        </div>
     </div>
 
 
 
-    <content>
-        <div align=center><img src="img/pawprint 1.png" </div>
-            <h2 align="center">Productos Destacados</h2>
-            <span>Comederos</span> <span>Accesorios</span> <span>Comida</span>
 
-    </content>
+    <!---CARDS-->
 
-    <div class="cards">
+    <div class=" cards">
         <div>
             <img src="img/churrasquito.png" alt="churrasquito">
             <p><b>Juguete Churrasquito</b></p>
@@ -80,14 +101,48 @@
 
     </div>
 
+    <!---FORMULARIO-->
+
+    <div class="formularioprincipal">
+        <h2 align=center>Contáctanos</h2>
+        <form>
+            <div class="formulario">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Ingresá tu correo electrónico">
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" placeholder="Teléfono">
+            </div>
+            <div class="botonesformulario">
+                <input class="reset" type="Reset" value="Resetear">
+                <input class="enviar" type="Submit" value="Enviar">
+            </div>
+        </form>
+    </div>
 
 
+    <!---SUSCRIBIRTE-->
+    <div class="divsuscripcion">
+        <h2><i class="far fa-envelope"></i> Suscribite para más novedades</h2>
+        <div class="formsuscripcion">
+            <form>
+                <label for="suscripcion"></label>
+                <input type="text" name="suscripcion" id="suscripcion" placeholder="Ingresá tu correo electrónico">
+                <input type="Submit" id=botonsuscribirme value="Suscribirme">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!---FOOTER-->
     <footer>
-
         <div class="footerbottom">
-            <span class="logofooter"><img src="img/Cat.png">Front <span class="perroygato">Cat&Dog </span>
-                <img src="img/Dog.png"></span>
-            <dl align=left>
+
+            <dl class="divlocalidad">
                 <dt><img src="img/iconolocation.png" alt="locationimage">Localidad
                 <dd>Calle - provincia</dd>
                 </dt>
@@ -99,7 +154,8 @@
                 </dt>
             </dl>
 
-
+            <div class="divlogofooter"> <img class="gatofooter" src="img/Cat.png">Front <span
+                    class="perroygatofooter">Cat&Dog </span><img class="perrofooter" src="img/Dog.png"></div>
         </div>
 
         <p class="derechosreservados" align=center>Todos los derechos reservados Front End</p>

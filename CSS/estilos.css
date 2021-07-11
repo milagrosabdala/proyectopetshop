@@ -1,86 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>
-
-
+@import url(/CSS/base.css);
 
 /*HEADER*/
 
-*{font-family: 'Roboto', sans-serif;}
-
-
-h1 {color:black}
-.topheader{color: whitesmoke; background-color: black; background-size: contain;}
-.divlogo {background-color: orange;}
-
-.hero 
-{
-  background-color: aliceblue;
-  background-image: url('../img/BOWL.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 400px;
- }
-
-.perroygato {color: white;}
-
-
-.esunplacer {
-  color: black ;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-  background-color: white; position: absolute;
-  width: 345px;
-  height: 35px;
-  left: 658px;
-  top: 246px; 
-  border-radius:  5%;}
-
-.comederosendescuento { position: absolute;
-  width: 300px;
-  height: 19px;
-  left: 740px;
-  top: 303px;
-  
+* {
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.linkcomederos { background-color: orange;
-  margin: auto;
-  position: absolute;
-  border-radius: 5%;
-  width: 141px;
-  height: 50px;
-  left: 767px;
-  top: 334px;
-  }
-a:link{color: white;}
-a:visited {color: white;}
-a:hover {text-decoration: none;}
-a:active {text-decoration: none;}
+a {
+	color: white;
+	text-decoration: none;
+}
 
+h1 {
+	font-size: 20px;
+	font-weight: 700px;
+	color: black;
+}
+.topheader {
+	color: whitesmoke;
+	background-color: black;
+	display: flex;
+	background-size: contain;
+}
 
+.desplegabletopheader li {
+	padding: 1em;
+}
+.divlogo {
+	background-color: orange;
+}
 
+.barranavegacion {
+	gap: 2em;
+}
+
+.linksnavegacion a:hover {
+	font-weight: 700;
+	font-size: 2em;
+}
+
+/*---HERO---*/
+.hero {
+	background-color: aliceblue;
+	background-image: url("../img/BOWL.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.contenedorhero {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	height: 50%;
+	padding: 1em;
+}
+.perroygato {
+	color: white;
+}
+
+.esunplacer {
+	color: black;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+	background-color: white;
+	width: 345px;
+	height: 35px;
+
+	border-radius: 10px;
+}
+
+.comederosendescuento {
+	width: 300px;
+	height: 19px;
+	left: 740px;
+	top: 303px;
+}
+
+.linkcomederos {
+	text-align: center;
+	padding: 0.5em;
+	background-color: orange;
+	font-size: 1em;
+	font-weight: 400;
+	border-radius: 5%;
+	width: 150px;
+}
+
+.linkcomederos a:hover {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 900;
+}
 
 /*BODY*/
-*{font-family: 'Roboto', sans-serif;}
-h2{font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 40px;}
+
+.bannercentral {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: center;
+	padding: 10vh;
+}
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 1em;
+}
+
+.seleccion {
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+	gap: 2em;
+}
+
+.cards {
+	display: flex;
+	align-content: space-between;
+	justify-content: space-around;
+	padding: 10vh;
+}
 
 
+.cards p {
+	color: #3c2313;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 500;
+}
+.precio {
+	text-align: center;
+	font-size: 1em;
+}
 
+/*FORMULARIO PRINCIPAL*/
+
+.formularioprincipal {
+	width: 100vw;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.formularioprincipal h2 {
+	color: #3c2313;
+	font-size: 1.5em;
+	padding: 2em;
+}
+
+.formulario {
+	width: 30vw;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.formulario input {
+	height: 3em;
+	color: white;
+	background-color: #3c2313;
+	border-radius: 15px;
+	border-width: 0ch;
+}
+input::placeholder {
+	color: white;
+}
+
+.botonesformulario {
+	display: flex;
+	align-content: center;
+	padding-top: 2em;
+	margin: 0 auto;
+	width: 15vw;
+	justify-content: space-around;
+}
+
+.reset {
+	color: white;
+	background-color: #8a8787;
+	font-size: 1em;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border-width: 0ch;
+}
+
+.enviar {
+	color: white;
+	background-color: #f0a83e;
+	font-size: 1em;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border-width: 0ch;
+}
+
+/*SUSCRIPCION*/
+.divsuscripcion {
+	width: 100vw;
+	background-color: #f0a83e;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.divsuscripcion h2 {
+	font-size: 1rem;
+	color: white;
+}
+
+.formsuscripcion  form{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 2em;
+	gap:4em
+;}
+
+#suscripcion {
+	width: 400px;
+	height: 2.5em;
+	color: #a0a0a0;
+	background-color: white;
+	border-width: 0ch;
+	border-radius: 15px;
+}
+
+#suscripcion::placeholder {
+	color: #a0a0a0;
+}
+
+#botonsuscribirme {
+	font-weight: bold;
+	color: white;
+	background-color: #3c2313;
+	width: 20%;
+	border-radius: 15px;
+	height: 2.5em;
+}
 
 /*FOOTER*/
-*{font-family: 'Roboto', sans-serif;}
-.footerbottom {color: white;
-   background-color:#3C2313; opacity: 100%; background-position: center; background-size: cover; }
+footer {
+	position: absolute;
+	width: 100vw;
+}
 
+.footerbottom {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	background-color: #3c2313;
+	opacity: 100%;
+	background-position: center;
+	background-size: cover;
+}
 
-.derechosreservados{text-align: center;color: white; background-color: black;}
-.precio{color: orange; font-size: 10px;font-family: 'Roboto', sans-serif;}
+.divlogofooter {
+	font-size: 1.5em;
+	color: white;
+	margin: auto 0;
+	padding-right: 2em;
+}
+.gatofooter,.perrofooter {height: 1em;}
 
-.cards {display: flex; flex-direction: row; justify-content: space-around}
+.perroygatofooter {
+	font-weight: bold;
+	color: #f0a83e;
+}
+
+.derechosreservados {
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+.precio {
+	color: orange;
+	font-size: 10px;
+	font-family: "Roboto", sans-serif;
+}
+
 

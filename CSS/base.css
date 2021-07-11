@@ -1,0 +1,58 @@
+.d-flex {
+	display: flex;
+}
+
+.flex-column {flex-direction: column;}
+
+.d-flex-rowreverse {
+	flex-direction: row-reverse;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-evenly {
+	justify-content: space-evenly;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.bg-white {
+	background: white;
+}
+
+.bg-black {
+	background: black;
+}
+
+.blanco {
+	color: white;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.m-20 {
+	margin: 20px;
+}
+
+.text-center {
+	text-align: center;
+}
