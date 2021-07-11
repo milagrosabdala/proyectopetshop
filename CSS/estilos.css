@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
-@import url(/CSS/base.css);
+@import url("CSS\base.css");
 
 /*HEADER*/
 
@@ -25,14 +25,22 @@ h1 {
 	color: whitesmoke;
 	background-color: black;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-size: contain;
 }
+
+.desplegabletopheader{display: flex;}
+
 
 .desplegabletopheader li {
 	padding: 1em;
 }
 .divlogo {
 	background-color: orange;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .barranavegacion {
